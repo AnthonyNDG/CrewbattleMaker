@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CrewBattle Maker</title>
+	<link rel="stylesheet" href="CBM.css" >
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="setup">
+		<img  src="Title.png">
+		
+		<div class="details"><h2>Have two teams go on head to head for an intense crewbattle to remember</h2></div>
+	
+		<div class="preview">
+
+    	</div>
+    	<div class="information">
+    	<table>
+    		<tr>
+				<td><h3>Crews</h3></td>
+				<td><h3>Name</h3></td>
+				<td><h3>Crewmates</h3></td>
+				<td><h3>Roster</h3></td>
+			</tr>
+
+			<tr>
+				<td><h3>Crew One</h3></td>
+				<td>
+  					<input id="CrewName1" type="text" id="qmail" name="qmail" placeholder="Team Sal">
+				</td>
+
+				<td>
+					 <div class="buttons">
+					 	<input class="Person1" type="text" id="qmail" name="qmail" placeholder="YamiltonJay"><br>
+    					<button class="circle plus1">+</button>
+    					<button class="circle minus1">-</button>
+    				</div>
+				</td>
+				<td>
+					<div id="Roster1">
+						
+					</div>
+				</td> 
+			</tr>
+			<tr>
+				<td><h3>Crew Two</h3></td>
+				<td>
+  					<input id="CrewName2" type="text" id="qmail" name="qmail" placeholder="Team Burnt">
+				</td>
+					
+				<td>
+					 <div class="buttons">
+					 	<input class="Person2" type="text" id="qmail" name="qmail" placeholder="TitanUnlimited"><br>
+    					<button class="circle plus2">+</button>
+    					<button class="circle minus2">-</button>
+    				</div>
+				</td>
+				<td>
+					<div id="Roster2">
+						
+					</div>
+				</td> 
+			</tr>
+    	</table>
+    	</div>
+    <label for="head">Background Color:</label>
+    <input type="color" id="head" name="head"
+           value="#FFFFFF">
+
+    <label for="quantity">Stocks</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5" value="3">
+    
+    <div class="buttons">
+    	<button class="start">Start</button>
+    	<button class="reset">Reset</button>
+    </div>
+
+</div>
+    <div class="Crewbattle">
+    	<div class="Players">
+    		<div id ="Player1">
+    			Name 1
+    		</div>
+    		<div id="Player1Stocks">
+    			3
+    		</div>
+    		-
+    		<div id="Player2Stocks">
+    			3
+    		</div>
+    		<div id="Player2">
+    			Name 2
+    		</div>
+    	</div>
+    	<div class="Crews">
+    		<div id="Crew1Stocks">
+    			21
+    		</div>
+    		<div class="Crew1">Burnt</div>
+    		<div class="Crew2">Sal</div>
+    		<div id="Crew2Stocks">
+    			21
+    		</div>
+    	</div>
+    	<div class="crewInfo">
+    		<div class="crewlist1 crewlist">
+    			<div id="Crew1crew"><h2>asd</h2></div>
+    			<div id="CrewRoster1"></div>
+    		</div>
+    		<div class="stockEditor1 stockEditor">
+    			<div class="Player1StockEditor">
+    				<div>Player 1 Stocks</div>
+    				<button class="Player1Plus circle">+</button>
+    				<button class="Player1- circle">-</button>
+    				<div>Crew 1 Stocks</div>
+    				<button class="Crew1Plus circle">+</button>
+    				<button class="Crew1- circle">-</button>
+    			</div>
+    			
+    		</div>
+    		<div class="stockEditor2 stockEditor">
+    			<div class="Player2StockEditor">
+    				<div>Player 2 Stocks</div>
+    				<button class="Player2Plus circle">+</button>
+    				<button class="Player2- circle">-</button>
+    				<div>Crew 2 Stocks</div>
+    				<button class="Crew2Plus circle">+</button>
+    				<button class="Crew2- circle">-</button>
+    			</div>
+    		</div>
+    		<div class="crewlist2 crewlist">
+    			<div id="Crew2crew"><h2>asd</h2></div>
+    			<div id="CrewRoster2"></div> 
+    		</div> 
+    	</div>
+    </div>
+
+	<script src="CBM.js"></script> 
+</body>
+
+</html>

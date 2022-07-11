@@ -1,0 +1,117 @@
+body{
+font-family: 'Ramabhadra', sans-serif;
+
+}
+input[type=text]{
+	font-size: 18px;
+	border-radius: 0.8em;
+	box-shadow: 0 0 0.3em black;
+}
+table{
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+td{
+	
+}
+h2{
+	margin: 0;
+}
+button{
+	color: white;
+	font-size: 20px;
+	border-radius: 0.3em;
+	background: mediumblue;
+	padding: 1%;
+	margin-top: 1%;
+	box-shadow: 0 0 0.3em black;
+}
+button:hover{
+	color: gray;
+	background: skyblue;
+	transition: all 0.2s ease;
+}
+.setup{
+	margin: 0 auto;
+	text-align: center;
+	
+
+}
+.Crewbattle{
+	opacity: 0;
+	transition: all 0.75s ease;
+}
+.circle{
+	border-radius: 1em;
+	width: 35px;
+}
+.Players{
+	display: flex;
+	flex-flow: row;
+	font-size: 45px;
+	color: white;
+	background-image: repeating-linear-gradient(dimgray, black 10%);
+	border-radius: 1em 1em 0 0;
+}
+#Player1, #Player2{
+	width: 45%;
+}
+#Player1{
+	text-align: right;
+}
+#Player1Stocks, #Player2Stocks{
+	width: 5%;
+	text-align: center;
+}
+.Crews{
+	display: flex;
+	flex-flow: row;
+	
+	font-size: 55px;
+	width: 100%;
+	margin-bottom: 5%;
+}
+#Crew1Stocks, #Crew2Stocks{
+	width: 10%;
+	text-align: center;
+	background-image: linear-gradient(to bottom right, white , gray);
+}
+#Crew1Stocks{
+	border-radius: 0 0 0 1em;
+}
+#Crew2Stocks{
+	border-radius: 0 0 1em 0;
+}
+.Crew1, .Crew2{
+	width: 40%;
+	font-weight: bolder;
+}
+.Crew1{
+	background-image: linear-gradient(to right, red , transparent);
+}
+.Crew2{
+	text-align: right;
+	background-image: linear-gradient(to right, transparent, blue);
+}
+.crewInfo{
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+}
+.stockEditor{
+	text-align: center;
+	width: 20%;
+}
+.crewlist{
+	width: 30%;
+	text-align: center;
+}
+#Crew1crew, #Crew2crew{
+	background: dimgray;
+	color: white;
+}
+#CrewRoster1, #CrewRoster2{
+	background: darkgray;
+
+}
