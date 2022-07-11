@@ -34,6 +34,8 @@ const Player1Stocks = document.getElementById('Player1Stocks');
 const Player2Stocks = document.getElementById('Player2Stocks');
 const Crew1Stocks = document.getElementById('Crew1Stocks');
 const Crew2Stocks = document.getElementById('Crew2Stocks');
+const crew1crew = document.getElementById('Crew1crew');
+const crew2crew = document.getElementById('Crew2crew');
 const Player1 = document.getElementById('Player1');
 const Player2 = document.getElementById('Player2');
 
@@ -52,7 +54,7 @@ window.onload = function(){
       crewlist1.push(person1.value);
       roster1.innerHTML = "";
       for (var i = 0; i < crewlist1.length; i++) {
-        roster1.innerHTML = roster1.innerHTML + crewlist1[i]+"<br>";
+        roster1.innerHTML = roster1.innerHTML + crewlist1[i]+" "+(i+1)+"<br>";
       }
     
 
@@ -68,7 +70,7 @@ window.onload = function(){
 
       roster2.innerHTML = "";
       for (var i = 0; i < crewlist2.length; i++) {
-        roster2.innerHTML = roster2.innerHTML + crewlist2[i]+"<br>";
+        roster2.innerHTML = roster2.innerHTML + crewlist2[i]+" "+(i+1)+"<br>";
       }
 
     }
@@ -82,7 +84,7 @@ window.onload = function(){
         
         roster1.innerHTML = "";
         for (var i = 0; i < crewlist1.length; i++) {
-          roster1.innerHTML = roster1.innerHTML + crewlist1[i]+"<br>";
+          roster1.innerHTML = roster1.innerHTML + crewlist1[i]+" "+(i+1)+"<br>";
         }
         
         return;
@@ -97,7 +99,7 @@ window.onload = function(){
         crewlist2.splice(i,1);
         roster2.innerHTML = "";
         for (var i = 0; i < crewlist2.length; i++) {
-          roster2.innerHTML = roster2.innerHTML + crewlist2[i]+"<br>";
+          roster2.innerHTML = roster2.innerHTML + crewlist2[i]+" "+(i+1)+"<br>";
         }
         return;
       }
@@ -131,6 +133,8 @@ window.onload = function(){
     CrewStocks = stocks.value * crewlist1.length;
     crew1.innerHTML = CrewName1.value;
     crew2.innerHTML = CrewName2.value;
+    crew1crew.innerHTML = CrewName1.value;
+    crew2crew.innerHTML = CrewName2.value;
 
     Crew1Stocks.innerHTML = crewlist1.length*stocks.value;
     Crew2Stocks.innerHTML = crewlist2.length*stocks.value;
